@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+font-family: 'Poppins', sans-serif;
+background: rgb(34, 34, 34);
+
+}
+
+.buscar{
+
+    width: 100%;
+    margin-top: 30px;
+    background: transparent;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+input{
+    width: 90%;
+    height: 50px;
+    font-size: 22px;
+    border: 1px solid #ddd;
+    margin: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    
+}
+
+#listaProduto{
+    display: none;
+    width: 85%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 70px;
+}
+
+#listaProduto li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #d6d6d6;
+    background: #f6f6f6;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+#listaProduto li a:hover{
+    background: #c7c7c7;
+    transition: 0.3s;
+}
+
+.item-name{
+    margin-left:30px;
+}
+
+.search-image{
+    border-radius: 30px;
+}
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+.card {
+
+    background: white;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    
+}
+
+.card-image {
+
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.car-1{
+    background-image: url('IMG_1.jpg');
+}
+
+.car-2{
+    background-image: url('IMG_2.jpg');
+}
+
+.car-3{
+    background-image: url('IMG_3.jpg');
+}
+
+.card h2 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+.card a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
