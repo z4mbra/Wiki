@@ -87,7 +87,7 @@ $rs = mysqli_query($con, $sql);
 </head>
 <body>
     <div class="box">
-        <form action="formulario.php" method="POST">
+        <form action="index.php" method="POST">
             <fieldset>
                 <legend><b>Cadastro de Carrinhos</b></legend>
                 <br>
