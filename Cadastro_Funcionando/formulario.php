@@ -1,3 +1,17 @@
+<?php
+
+include_once('config.php');
+
+$nome = $_POST['nome'];
+$rate = $_POST['rate'];
+
+$sql = "INSERT INTO carro(nome,raridade) VALUES('$nome', '$rate')";
+
+$rs = mysqli_query($con, $sql);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -73,7 +87,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="config.php" method="POST">
+        <form action="formulario.php" method="POST">
             <fieldset>
                 <legend><b>Cadastro de Carrinhos</b></legend>
                 <br>
@@ -94,7 +108,7 @@
                 <input type="radio" name="rate" id="C" value="C" required>
                 <label for="C">C</label>
                 <br><br>
-                <input type="submit" id="submit" name="submit">
+                <button type="submit" id="submit" name="submit">Submit</button>
             </fieldset>
         </form>
     </div>
