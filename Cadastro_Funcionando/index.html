@@ -1,17 +1,3 @@
-<?php
-
-include_once('config.php');
-
-$nome = $_POST['nome'];
-$rate = $_POST['rate'];
-
-$sql = "INSERT INTO carro(nome,raridade) VALUES('$nome', '$rate')";
-
-$rs = mysqli_query($con, $sql);
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -87,7 +73,7 @@ $rs = mysqli_query($con, $sql);
 </head>
 <body>
     <div class="box">
-        <form action="index.php" method="POST">
+        <form action="config.php" method="POST">
             <fieldset>
                 <legend><b>Cadastro de Carrinhos</b></legend>
                 <br>
