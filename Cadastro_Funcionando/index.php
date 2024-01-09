@@ -1,3 +1,23 @@
+<?php
+
+include_once('config.php');
+
+$nome = $_POST['nome'];
+$rate = $_POST['rate'];
+
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
+
+$sql = "INSERT INTO carro(nome,raridade) VALUE('$nome','$rate')";
+$result = $conn->query($sql);
+
+
+$conn->close();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -73,7 +93,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="config.php" method="POST">
+        <form action="index.php" method="POST">
             <fieldset>
                 <legend><b>Cadastro de Carrinhos</b></legend>
                 <br>
